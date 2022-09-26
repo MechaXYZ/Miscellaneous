@@ -1,4 +1,4 @@
-var textelements = ["p", "a", "div", "span", "pre", "header", "dd", "dl", "dt", "hr", "h1", "h2", "h3", "h4", "h5", "h6", "b"];
+var textelements = ["p", "a", "div", "span", "pre", "header", "dd", "dl", "dt", "hr", "h1", "h2", "h3", "h4", "h5", "h6", "b", "li"];
 
 var answer = prompt("Make individual words have gravity, not the entire element? (Y/N)");
 if (answer != null) {
@@ -49,10 +49,10 @@ function grav() {
 	for (var v of elements) {
 		// console.log(v);
 		$(v).each(function() {
-			if ($(this).children().length < 1) {
+			// if ($(this).children().length < 1) {
 				$(this).addClass("box2d");
 				$(this).css("zIndex", "99");
-			};
+			// };
 		});
 	};
 }
