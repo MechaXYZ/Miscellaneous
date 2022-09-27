@@ -49,10 +49,10 @@ function grav() {
 	for (var v of elements) {
 		// console.log(v);
 		$(v).each(function() {
-			// if ($(this).children().length < 1) {
+			if ($(this).children().length < 1) {
 				$(this).addClass("box2d");
 				$(this).css("zIndex", "99");
-			// };
+			};
 		});
 	};
 }
