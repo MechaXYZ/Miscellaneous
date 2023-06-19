@@ -1,2 +1,2 @@
 # Miscellaneous
-other shit i use
+basically my cdn
